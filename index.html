@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+	<div class="slides">
+		<section>
+			<h1 style="color: rgba(13, 148, 136)">Chakra UI</h1>
+			<a href="https://github.com/chakra-ui/chakra-ui" target="_blank">
+				<img height="130px"
+					 src="https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/media/logo-colored@2x.png?raw=true"
+					 alt="Chakra logo" />
+			</a>
+		</section>
+
+		<section>
+			<h2>Features and benefits of Chakra UI</h2>
+			<img src="assets/chakra-benefits.avif" height="300px" style="border-radius: 20px" alt="support image"/>
+		</section>
+
+		<section>
+			<h2>1. Accessibility:</h2>
+			<pre><code  data-trim data-line-numbers>
+				import React from 'react';
+				import { Button } from '@chakra-ui/react';
+
+				const AccessibleButton = () => {
+  					return (
+						<Button aria-label="Submit form">
+							Submit
+						</Button>
+					);
+				};
+
+				export default AccessibleButton;
+			</code></pre>
+		</section>
+
+		<section>
+			<section data-auto-animate>
+				<h2>2. Theming:</h2>
+				<img style="border-radius: 20px;" src="assets/light-theme.png" alt="light theme" />
+			</section>
+			<section data-auto-animate>
+				<h2>2. Theming:</h2>
+				<img style="border-radius: 20px;" src="assets/dark-theme.png" alt="dark theme" />
+			</section>
+		</section>
+
+		<section>
+			<h2>3. Flexible Components:</h2>
+			<pre><code  data-trim data-line-numbers>
+				import React from 'react';
+				import { Button } from '@chakra-ui/react';
+
+				const FlexibleButton = () => {
+					return (
+						&ltButton colorScheme="blue" size="lg" variant="outline">
+							Click Me
+						&lt/Button>
+					);
+				};
+
+				export default FlexibleButton;
+			</code></pre>
+		</section>
+		<section>
+			<section data-auto-animate>
+				<h2>4. Intuitive API:</h2>
+				<pre><code  data-line-numbers="|1-14|15-26">
+import { Button, Card, Image, Text } from "@chakra-ui/react"
+
+const Demo = () => {
+return (
+&ltCard.Root maxW="sm" overflow="hidden">
+	&ltImage
+			src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+			alt="Green double couch with wooden legs"
+	/>
+	&ltCard.Body gap="2">
+		&ltCard.Title>Living room Sofa&lt/Card.Title>
+		&ltCard.Description>
+			This sofa is perfect for modern tropical spaces, baroque inspired spaces.
+		&lt/Card.Description>
+		&ltText textStyle="2xl" fontWeight="medium" letterSpacing="tight" mt="2">
+			$450
+		&lt/Text>
+	&lt/Card.Body>
+	&ltCard.Footer gap="2">
+		&ltButton variant="solid">Buy now&lt/Button>
+		&ltButton variant="ghost">Add to cart&lt/Button>
+	&lt/Card.Footer>
+&lt/Card.Root>
+  )
+}
+			</code></pre>
+			</section>
+			<section data-auto-animate>
+				<h2>4. Intuitive API:</h2>
+				<img style="border-radius: 20px" src="assets/intuitive-api.png" alt="intuitive api image" />
+			</section>
+		</section>
+
+		<section>
+			<h2>5. Responsive Design</h2>
+			<pre><code  data-line-numbers>import React from 'react';
+import { Box } from '@chakra-ui/react';
+
+export default const ResponsiveBox = () => {
+	return (
+		&ltBox
+				width={["100%", "50%", "25%"]}
+				padding="4"
+				bg="teal.500"
+				>
+			Responsive Box
+		&lt/Box>
+	);
+};
+			</code></pre>
+		</section>
+
+		<section>
+			<h2>6. CSS-in-JS</h2>
+			<pre><code  data-line-numbers="1-14|7-12">import React from 'react';
+import { Box } from '@chakra-ui/react';
+
+export default const StyledBox = () => {
+	return (
+		&ltBox
+			as="button"
+			bg="tomato"
+			color="white"
+			p={4}
+			borderRadius="md"
+			_hover={{ bg: "red.500" }}
+		>
+			Click Me
+		&lt/Box>
+	);
+};
+			</code></pre>
+		</section>
+
+		<section>
+			<h2>7. TypeScript Support:</h2>
+			<pre><code  data-line-numbers>import React, { FC } from 'react';
+import { Button } from '@chakra-ui/react';
+
+interface MyButtonProps {
+	label: string;
+}
+
+const MyButton: FC&ltMyButtonProps> = ({ label }) => {
+	return (
+		&ltButton colorScheme="green">{label}&lt/Button>
+	);
+};
+			</code></pre>
+		</section>
+
+		<section>
+			<section data-auto-animate>
+				<h2>Chakra UI components:</h2>
+				<ul>
+					<li>Buttons</li>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2>Chakra UI components:</h2>
+				<ul>
+					<li>Buttons</li>
+					<li>Cards</li>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2>Chakra UI components:</h2>
+				<ul>
+					<li>Buttons</li>
+					<li>Cards</li>
+					<li>Tabs</li>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2>Chakra UI components:</h2>
+				<ul>
+					<li>Buttons</li>
+					<li>Cards</li>
+					<li>Tabs</li>
+					<li>Checkbox</li>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2>Chakra UI components:</h2>
+				<ul>
+					<li>Buttons</li>
+					<li>Cards</li>
+					<li>Tabs</li>
+					<li>Checkbox</li>
+					<li>Pagination</li>
+				</ul>
+			</section>
+			<section data-auto-animate>
+				<h2>Chakra UI components:</h2>
+				<ul>
+					<li>Buttons</li>
+					<li>Cards</li>
+					<li>Tabs</li>
+					<li>Checkbox</li>
+					<li>Pagination</li>
+					<li>and others...</li>
+				</ul>
+			</section>
+		</section>
+
+		<section>
+			<section data-auto-animate>
+				<h2>Fast installation and setting</h2>
+			</section>
+			<section data-auto-animate>
+				<h3 data-id="code-title">Step 1:</h3>
+				<pre data-id="code-animation" style="width: 100%"><code>npm install @chakra-ui/react @emotion/react @emotion/styled framer-motion</code></pre>
+			</section>
+			<section data-auto-animate>
+				<h3 data-id="code-title">Step 2:</h3>
+				<p>In root component</p>
+				<pre data-id="code-animation" style="width: 100%"><code>import { ChakraProvider } from "@chakra-ui/react";
+
+function App() {
+	return (
+	&ltChakraProvider>
+		{/* Your components */}
+	&lt/ChakraProvider>
+	);
+}
+				</code></pre>
+			</section>
+		</section>
+		<section>
+			<h2>Community Support:</h2>
+			<img src="assets/support-image.jpg" style="border-radius: 20px" alt="support image"></img>
+		</section>
+		<section>
+			<h2>Thank you for your attention</h2>
+			<p>
+				This presentation was developed by PrivatePython for educational purposes as part of the Rolling Scopes School training
+			</p>
+		</section>
+	</div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
+</html>
